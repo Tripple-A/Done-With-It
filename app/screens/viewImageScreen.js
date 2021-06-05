@@ -1,17 +1,15 @@
 import React from 'react';
 import { StyleSheet, View, Image} from 'react-native';
 
+import colors from '../config/colors'
+
 const ViewImageScreen = () =>  {
 
-  return (
+  return (  
     <View style={styles.container}>
-      <View style={{flex: 1, backgroundColor: 'black', flexDirection: 'row', justifyContent: 'space-between'}}> 
-        <View style={{flex: 0.2, backgroundColor: '#fc5c65'}} />
-        <View style={{flex: 0.2, backgroundColor: '#4ECDC4'} } />
-      </View>
-      <View style={{flex: 1.5, backgroundColor: 'black', flexDirection: 'row'}} /> 
+      <View style={styles.closeIcon}></View>
+      <View style={styles.deleteIcon}></View>
       <Image source={require('../assets/chair.jpg')} style={styles.image} />
-      <View style={{flex: 2, backgroundColor: 'black'} }></View>
     </View>
   );
 }
@@ -19,13 +17,30 @@ const ViewImageScreen = () =>  {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: colors.black
   },
   image: {
    flex: 8,
-    width: 300,
-    height: 400,
+    width: '100%',
+    height: '100%',
     resizeMode: "contain",  
   },
+  closeIcon: {
+    width: 50,
+    height: 50,
+    backgroundColor: colors.primary,
+    position: 'absolute',
+    top: 40,
+    left: 50
+  },
+  deleteIcon: {
+    width: 50,
+    height: 50,
+    backgroundColor: colors.secondary,
+    position: 'absolute',
+    top: 40,
+    right: 50
+  }
 });
 
 export default ViewImageScreen

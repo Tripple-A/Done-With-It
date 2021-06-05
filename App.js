@@ -2,12 +2,12 @@
 import React from 'react';
 import { StyleSheet, View, StatusBar, Platform} from 'react-native';
 import WelcomeScreen from './app/screens/welcomeScreen'
-// import ViewImageScreen from './app/screens/viewImageScreen'
+import ViewImageScreen from './app/screens/viewImageScreen'
 
 export default function App() {
 
   return (
-       <WelcomeScreen />
+       <ViewImageScreen />
   );
 }
 
