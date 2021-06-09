@@ -8,7 +8,7 @@ const WelcomeScreen = () =>  {
 
   return (
     
-      <ImageBackground source={require('../assets/background.jpg')} style={styles.bg} blurRadius={1} >
+      <ImageBackground source={require('../assets/background.jpg')} style={styles.bg} blurRadius={2} >
         <View style={styles.logoContainer}>
           <Image source={require('../assets/logo-red.png')} style={styles.redLogo} />
           <Text> Dash out what you don't need </Text>
