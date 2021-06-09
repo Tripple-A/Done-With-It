@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Image, StatusBar} from 'react-native';
+import { StyleSheet, View, Image, StatusBar, Platform} from 'react-native';
 
 import colors from '../config/colors'
 

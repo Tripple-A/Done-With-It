@@ -8,10 +8,10 @@ const WelcomeScreen = () =>  {
 
   return (
     
-      <ImageBackground source={require('../assets/background.jpg')} style={styles.bg} >
+      <ImageBackground source={require('../assets/background.jpg')} style={styles.bg} blurRadius={1} >
         <View style={styles.logoContainer}>
           <Image source={require('../assets/logo-red.png')} style={styles.redLogo} />
-          <Text> Sell what you don't need </Text>
+          <Text> Dash out what you don't need </Text>
         </View>
         <View style={{position: 'absolute', paddingBottom: 20}}>
           <Button color={colors.primary} text={'LOGIN'} />
@@ -30,18 +30,6 @@ const styles = StyleSheet.create({
   redLogo: {
     width: 100,
     height: 100,
-    // position: 'absolute',
-    // top: 70
-  },
-  loginButton: {
-    backgroundColor: colors.primary,
-    width: '100%',
-    height: 70
-  },
-  registerButton: {
-    // backgroundColor: colors.secondary,
-    // width: '100%',
-    // height: 70
   },
   logoContainer: {
     position: 'absolute', alignItems: 'center', top: 70,
