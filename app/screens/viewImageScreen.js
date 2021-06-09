@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Image} from 'react-native';
+import { StyleSheet, View, Image, StatusBar} from 'react-native';
 
 import colors from '../config/colors'
 
@@ -17,7 +17,8 @@ const ViewImageScreen = () =>  {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.black
+    backgroundColor: colors.black,
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0
   },
   image: {
    flex: 8,
@@ -30,7 +31,7 @@ const styles = StyleSheet.create({
     height: 50,
     backgroundColor: colors.primary,
     position: 'absolute',
-    top: 40,
+    top: 50,
     left: 50
   },
   deleteIcon: {
@@ -38,7 +39,7 @@ const styles = StyleSheet.create({
     height: 50,
     backgroundColor: colors.secondary,
     position: 'absolute',
-    top: 40,
+    top: 50,
     right: 50
   }
 });
