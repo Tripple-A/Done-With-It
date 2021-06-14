@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
-    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight + 40 : 0
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight + 40 : 0,
+    color: 'red'
   }
 });
