@@ -11,9 +11,9 @@ const WelcomeScreen = () =>  {
       <ImageBackground source={require('../assets/background.jpg')} style={styles.bg} blurRadius={2} >
         <View style={styles.logoContainer}>
           <Image source={require('../assets/logo-red.png')} style={styles.redLogo} />
-          <Text> Dash out what you don't need </Text>
+          <Text style={styles.tagLine}> Dash out what you don't need </Text>
         </View>
-        <View style={{position: 'absolute', paddingBottom: 20}}>
+        <View style={{ padding: 20, width: '100%'}}>
           <Button color={colors.primary} text={'LOGIN'} />
           <Button color={colors.secondary} text={'REGISTER'} />
         </View>
@@ -33,6 +33,11 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     position: 'absolute', alignItems: 'center', top: 70,
+  },
+  tagLine: {
+    fontSize: 20,
+    fontWeight: '600',
+    paddingVertical: 10
   }
 
 });

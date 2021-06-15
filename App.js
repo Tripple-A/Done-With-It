@@ -5,15 +5,12 @@ import WelcomeScreen from './app/screens/welcomeScreen'
 import ViewImageScreen from './app/screens/viewImageScreen'
 import ListingDetailsScreen from './app/screens/listingDetailsScreen'
 import Card from './app/components/Card'
+import MessagesScreen from './app/screens/messagesScreen';
 
 export default function App() {
 
   return (
-    <ListingDetailsScreen
-      title={'Red jacket for dash'}
-      subtitle={'Eket'}
-      image={require('./app/assets/jacket.jpg')}
-    />
+    <MessagesScreen />
   );
 }
 

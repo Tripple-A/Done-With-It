@@ -23,14 +23,13 @@ const styles = StyleSheet.create({
       width: '90%',
       height: 250,
       borderRadius: 20,
-      marginBottom: 15
+      marginBottom: 15,
+      overflow:  'hidden'
   },
   image: {
       width: '100%',
       height: '70%',
       resizeMode: 'cover',
-      borderTopLeftRadius: 20,
-      borderTopRightRadius: 20
   },
   text: {
     padding: 10
